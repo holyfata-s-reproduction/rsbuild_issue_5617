@@ -1,36 +1,20 @@
-# Rsbuild project
+# RSBUILD_ISSUE_5617
 
-## Setup
+The environment variables can be used in web and node.
 
-Install the dependencies:
-
-```bash
-pnpm install
+```typescript
+try {
+  console.log(import.meta.env.PUBLIC_TEST);
+  console.log(import.meta.env.TEST);
+} catch (error) { console.error(error) }
 ```
 
-## Get started
+![alt text](image.png)
 
-Start the dev server, and the app will be available at [http://localhost:3000](http://localhost:3000).
+![alt text](image-1.png)
 
-```bash
-pnpm dev
-```
+But the type-check is only useful in web.
 
-Build the app for production:
+![alt text](image-2.png)
 
-```bash
-pnpm build
-```
-
-Preview the production build locally:
-
-```bash
-pnpm preview
-```
-
-## Learn more
-
-To learn more about Rsbuild, check out the following resources:
-
-- [Rsbuild documentation](https://rsbuild.rs) - explore Rsbuild features and APIs.
-- [Rsbuild GitHub repository](https://github.com/web-infra-dev/rsbuild) - your feedback and contributions are welcome!
+![alt text](image-3.png)
