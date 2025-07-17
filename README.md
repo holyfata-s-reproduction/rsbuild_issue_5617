@@ -1,5 +1,11 @@
 # RSBUILD_ISSUE_5617
 
+```bash
+# node18
+bun install
+bun run dev
+```
+
 ### The environment variables can be used in web and node.
 
 ```typescript
