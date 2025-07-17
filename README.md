@@ -1,6 +1,6 @@
 # RSBUILD_ISSUE_5617
 
-The environment variables can be used in web and node.
+### The environment variables can be used in web and node.
 
 ```typescript
 try {
@@ -9,12 +9,16 @@ try {
 } catch (error) { console.error(error) }
 ```
 
+**# Web** 
 ![alt text](image.png)
 
+**# Node** 
 ![alt text](image-1.png)
 
-But the type-check is only useful in web.
+### But the type-check is only useful in web.
 
+**# index.ts** 
 ![alt text](image-2.png)
 
+**# rsbuild.config.ts** 
 ![alt text](image-3.png)
